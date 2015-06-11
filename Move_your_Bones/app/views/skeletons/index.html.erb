@@ -1,1 +1,4 @@
-hola
+<% @skeletons.each do |skeleton| %>
+	<h2><%= skeleton.name %></h2>
+		<%= link_to image_tag(skeleton.image), game_skeleton_path(@game, skeleton) %>
+<% end %>

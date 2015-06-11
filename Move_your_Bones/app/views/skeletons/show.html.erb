@@ -1,0 +1,12 @@
+<h2><%= @skeletons.name %></h2>
+
+<% @skeletons.bones.each do |bone| %>
+	<div id='<%= "#{bone.id}_#{bone.name}" %>'>
+		<%= bone.name %>
+	</div>
+<% end %>
+
+
+<button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>
+
+<button><%= link_to 'LEVELS', game_skeletons_path(@game) %></button>

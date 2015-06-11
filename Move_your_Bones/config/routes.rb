@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get '/' => 'games#index'
     resources :games do
-      resources :skeletons
-      resources :bones
+      resources :skeletons do
+      	resources :bones
+      end
     end
 end

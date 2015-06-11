@@ -1,0 +1,15 @@
+<%= form_for [@game, @skeleton, @bones] do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<br>
+	<br>
+	<%= f.label :skeleton_id %>
+	<%= f.text_field :skeleton_id %>
+	<br>
+	<br>
+	<%= f.submit 'Save' %>
+
+<% end %>
+
+<button><%= link_to 'Back To Bones', game_skeleton_bones_path(@game, @skeleton) %></button> 

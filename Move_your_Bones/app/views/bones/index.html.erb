@@ -1,0 +1,6 @@
+<% @bones.each do |bone| %>
+	<p><%= bone.name %> |
+		<%= link_to 'Edit', edit_game_skeleton_bone_path(@game, @skeletons, bone) %></p>
+<% end %>
+
+<button><%= link_to 'Back To Game', game_skeleton_path(@game, @skeletons) %></button>
