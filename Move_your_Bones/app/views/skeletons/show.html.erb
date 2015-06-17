@@ -1,11 +1,13 @@
 <h2><%= @skeletons.name %></h2>
-
 <% @skeletons.bones.each do |bone| %>
-	<div id='<%= "#{bone.id}_#{bone.name}" %>'>
-		<%= bone.name %>
+	<div id = "content">
+		 <div class = "draggable">
+			<%= bone.name %>
+		 </div>
 	</div>
 <% end %>
-
+	
+	<div id = "droppable"></div>
 
 <button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>
 

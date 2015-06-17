@@ -1,4 +1,17 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.draggable {
+	width: 90px;
+	border: solid 1px;
+	background: white;
+	text-align: center;
+}
+
+.draggable.ui-draggable-dragging {
+	background: #90D1B9;
+}
+
+#droppable {
+	float: right;
+	width: 90px;
+	height: 20px;
+	border: solid 1px;
+}
