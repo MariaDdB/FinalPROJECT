@@ -1,14 +1,19 @@
 <h2><%= @skeletons.name %></h2>
-<% @skeletons.bones.each do |bone| %>
-	<div id = "content">
-		 <div class = "draggable">
-			<%= bone.name %>
-		 </div>
+	<div id="content">
+		<div id="bonePile">
+			<% @skeletons.bones.each_with_index do |bone, i| %>
+			 	<div class="draggable" id="bone<%= i %>">
+				<%= bone.name %>
+			 	</div>
+			<% end %>
+		</div>
+		
+		<div id="match"></div>
 	</div>
-<% end %>
-	
-	<div id = "droppable"></div>
 
-<button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>
+<br>
 
-<button><%= link_to 'LEVELS', game_skeletons_path(@game) %></button>
+<div class="clear">
+	<button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>	
+	<button><%= link_to 'LEVELS', game_skeletons_path(@game) %></button>
+</div>

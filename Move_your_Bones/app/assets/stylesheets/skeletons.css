@@ -9,9 +9,24 @@
 	background: #90D1B9;
 }
 
-#droppable {
-	float: right;
-	width: 90px;
+.ui-droppable {
+	width: 100px;
 	height: 20px;
 	border: solid 1px;
+}
+
+#bonePile {
+	float: left;
+}
+#match {
+	float:right;
+	overflow: hidden;
+}
+
+#match div {
+	border: solid 1px;
+}
+
+.clear{
+	clear: both;
 }
