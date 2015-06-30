@@ -1,3 +1,65 @@
+/*-----Index Seletons-----*/
+.levels img {
+	width: 200px;
+	height: 200px;
+  	border-radius: 30%;
+}
+	
+.levels {
+	width: 100%;
+}
+	
+#img-levels0 h3 {
+	margin-left: 3.7em;
+}
+
+#img-levels0 {
+	position: absolute;
+	left: 35em;
+}
+
+#img-levels1 h3 {
+	margin-left: 1.2em;
+}
+
+#img-levels1 {
+	position: absolute;
+	top: 8em;
+	left: 18em;
+}
+
+#img-levels2 h3 {
+	margin-left: 2em;
+}
+
+#img-levels2 {
+	position: absolute;
+	top: 8em;
+	left: 52em;
+}
+
+#img-levels3 h3 {
+
+}
+
+#img-levels3 {
+	position: absolute;
+	top: 25em;
+	left: 24em;
+}
+
+#img-levels4 {
+	position: absolute;
+	top: 25em;
+	left: 47em;
+}
+
+/*----Show Skeletons-Title----*/
+h2 {
+	text-align: center;
+}
+
+/*----Show Skeletons-DRAG & DROP----*/
 .draggable {
 	width: 90px;
 	border: solid 1px;
@@ -27,6 +89,33 @@
 	border: solid 1px;
 }
 
-.clear{
+.clear {
 	clear: both;
+}
+
+.next-level {
+	width: 350px;
+	height: 150px;
+	border: solid 2px;
+	display: none;
+	margin-left: 30em;
+	margin-top: 5em;
+	border-radius: 5px;
+}
+
+.congrats {
+	margin-top: 2em;
+	text-align: center; 
+}
+
+.button-nextLevel {
+	margin-left: 9.9em;
+	margin-top: 1.5em;
+	padding: 0.5em; 
+}
+
+/*----Show Skeletons-img ----*/
+.skeletons-img {
+	float: left;
+	margin-left: 130px;
 }

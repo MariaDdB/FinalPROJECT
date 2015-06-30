@@ -28,8 +28,11 @@ function handleDropEvent(event, ui){
 	var boneMatch = ui.draggable.data('bone');
 
 	if (slotBone == boneMatch) {
-		ui.draggable.draggable('disable');
-		$(this).droppable('disable');
-		ui.draggable.draggable('option', 'revert', false);
+		count++;
+		console.log(count);
 	}	
+	
+	if (count == bonesLength) {
+		$(".next-level").show();
+	}
 }

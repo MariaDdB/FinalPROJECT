@@ -3,13 +3,26 @@
 		<div id="bonePile">
 			<% @skeletons.bones.each_with_index do |bone, i| %>
 			 	<div class="draggable" id="bone<%= i %>">
-				<%= bone.name %>
+					<%= bone.name %>
 			 	</div>
 			<% end %>
 		</div>
 		
+		
+			<div class="skeletons-img">
+				<%= image_tag(@skeletons.skeleton_img, :id=> @skeletons.name) %>
+				<%= image_tag(@skeletons.skeleton_img3) %>
+				<%= image_tag(@skeletons.skeleton_img2) %>
+			</div>
+		
+		
 		<div id="match"></div>
 	</div>
+
+<div class="next-level">
+	<p class="congrats">Congratulations! You did it!</p>
+	<button class="button-nextLevel">Next Level</button>
+</div>
 
 <br>
 

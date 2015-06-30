@@ -29,8 +29,10 @@ ActiveRecord::Schema.define(version: 20150610132523) do
     t.integer  "game_id"
     t.string   "name"
     t.string   "skeleton_img"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "skeleton_img2"
+    t.string   "skeleton_img3"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.string   "image"
   end
 

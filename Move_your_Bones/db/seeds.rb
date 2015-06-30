@@ -1,10 +1,10 @@
 Game.create()
 
-Skeleton.create(game_id: 1, name: "Cráneo", image:"/images/rayosx.jpg", skeleton_img: "")
-Skeleton.create(game_id: 1, name: "Columna Vertebral", image:"/images/esqueleto-grupo.jpg", skeleton_img: "")
-Skeleton.create(game_id: 1, name: "Parte Torácica", image:"/images/rayosx3.jpg", skeleton_img: "")
-Skeleton.create(game_id: 1, name: "Extremidades Superiores", image:"/images/rayosx2.jpeg", skeleton_img: "")
-Skeleton.create(game_id: 1, name: "Extremidades Inferiores", image:"/images/esqueletos.jpg", skeleton_img: "")
+Skeleton.create(game_id: 1, name: "Cráneo", image:"/images/levels/rayosx.png", skeleton_img: "/images/skeleton/skull-skeleton.png", skeleton_img2: "/images/skeleton/skull-skeleton2.png", skeleton_img3: "/images/skeleton/hioides.png")
+Skeleton.create(game_id: 1, name: "Columna Vertebral", image:"/images/levels/esqueleto-grupo.png", skeleton_img: "")
+Skeleton.create(game_id: 1, name: "Parte Torácica", image:"/images/levels/rayosx3.png", skeleton_img: "")
+Skeleton.create(game_id: 1, name: "Extremidades Superiores", image:"/images/levels/rayosx2.png", skeleton_img: "")
+Skeleton.create(game_id: 1, name: "Extremidades Inferiores", image:"/images/levels/esqueletos.png", skeleton_img: "")
 
 Bone.create(skeleton_id: 1, name:"Frontal")
 Bone.create(skeleton_id: 1, name:"Occipital")

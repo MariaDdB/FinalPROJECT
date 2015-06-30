@@ -8,3 +8,29 @@
 	font-size: 80px;
 	font-weight: 300;
 }
+
+#title {
+	font-family: bonesfont;
+	text-align: center;
+}
+
+#skull {
+	width: 1000px;
+	height: 250px;
+}
+
+#img-skull {
+	margin-left: 1.5em;
+	width: 159px;
+	height: 225px;
+}
+
+#startbutton {
+	width: 100px;
+	height: 50px;
+	margin-left: 46em;
+	margin-top: 5em;
+	border-radius: 5px;
+	border: solid 2px #036340;
+	background-color: #EDF2F1;
+}

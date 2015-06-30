@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+	font-family: bonesfont;
+	src: url('/BONEAPA.TTF');
+}
+
+@font-face {
+	font-family: bodyfont;
+	src: url('/Cartoon Bones.ttf');
+}

@@ -1,4 +1,13 @@
-<% @skeletons.each do |skeleton| %>
-	<h2><%= skeleton.name %></h2>
-		<%= link_to image_tag(skeleton.image), game_skeleton_path(@game, skeleton) %>
-<% end %>
+<div class="levels">
+	<% @skeletons.each_with_index do |skeleton, i| %>
+		<div id="img-levels<%= i %>">
+		
+			<h3>
+				<%= skeleton.name %>
+			</h3>
+			
+			<%= link_to image_tag(skeleton.image), game_skeleton_path(@game, skeleton) %>
+		</div>
+	<% end %>
+</div>
+					

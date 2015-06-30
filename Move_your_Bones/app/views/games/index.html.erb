@@ -1,7 +1,22 @@
 <div class="main">
 	<div class="container">
-		<h1>Move your bones</h1>
-	
-		<button><%= link_to 'GAME', game_skeletons_path(@game) %></button>
+		<h1 id="title">MOVE YOUR BONES</h1>
+
+		<div id="skull">
+			<img id="img-skull" src="/images/game/skull.png">
+			
+			<img id="img-skull" src="/images/game/skull2.png">
+
+			<img id="img-skull" src="/images/game/skull3.png">
+
+			<img id="img-skull" src="/images/game/skull4.png">
+
+			<img id="img-skull" src="/images/game/skull5.png">
+		</div>
 	</div>
 </div>
+
+	
+
+	
+	 <button id="startbutton"><strong><%= link_to 'START', game_skeletons_path(@game) %></strong></button>
