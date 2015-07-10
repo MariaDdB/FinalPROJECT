@@ -1,4 +1,18 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+/*----Bones description----*/
+.content-bones {
+	width: 100%;
+	position: absolute;
+}
+
+.content-description {
+	width: 80%;
+	margin-left: 7em;
+}
+
+h4 {
+	text-align: center;
+}
+
+p .content-description {
+	text-align: justify;
+}

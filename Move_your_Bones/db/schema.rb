@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20150610132523) do
   create_table "bones", force: :cascade do |t|
     t.integer  "skeleton_id"
     t.string   "name"
+    t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

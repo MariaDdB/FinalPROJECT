@@ -1,7 +1,7 @@
 /*-----General Game-----*/
 .container {
 	margin: 0 auto;
-	width: 960px;
+	width: 99%;
 }
 
 .main h1 {
@@ -17,6 +17,7 @@
 #skull {
 	width: 1000px;
 	height: 250px;
+	margin-left: 11.5em;
 }
 
 #img-skull {
@@ -28,7 +29,7 @@
 #startbutton {
 	width: 100px;
 	height: 50px;
-	margin-left: 46em;
+	margin-left: 45.5em;
 	margin-top: 5em;
 	border-radius: 5px;
 	border: solid 2px #036340;

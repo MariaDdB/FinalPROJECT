@@ -1,3 +1,4 @@
+
 /*-----Index Seletons-----*/
 .levels img {
 	width: 200px;
@@ -8,6 +9,10 @@
 .levels {
 	width: 100%;
 }
+
+.disabled-level{
+	pointer-events: none;
+}
 	
 #img-levels0 h3 {
 	margin-left: 3.7em;
@@ -15,10 +20,12 @@
 
 #img-levels0 {
 	position: absolute;
+	top: -1em;
 	left: 35em;
 }
 
 #img-levels1 h3 {
+	font: bold large serif;
 	margin-left: 1.2em;
 }
 
@@ -39,7 +46,7 @@
 }
 
 #img-levels3 h3 {
-
+	
 }
 
 #img-levels3 {
@@ -49,22 +56,32 @@
 }
 
 #img-levels4 {
+	
+}
+
+#img-levels4 {
 	position: absolute;
 	top: 25em;
 	left: 47em;
 }
 
 /*----Show Skeletons-Title----*/
+.content-body {
+	width: 99%;
+	position: absolute;
+}
+
 h2 {
 	text-align: center;
 }
 
 /*----Show Skeletons-DRAG & DROP----*/
 .draggable {
-	width: 90px;
+	width: 100px;
 	border: solid 1px;
 	background: white;
 	text-align: center;
+	margin-top: 0.2em;
 }
 
 .draggable.ui-draggable-dragging {
@@ -74,25 +91,137 @@ h2 {
 .ui-droppable {
 	width: 100px;
 	height: 20px;
-	border: solid 1px;
 }
 
 #bonePile {
 	float: left;
 }
+/*----Level 1----*/
 #match {
-	float:right;
 	overflow: hidden;
 }
 
 #match div {
+	position: absolute;
 	border: solid 1px;
+	z-index: 1;
+}
+
+#Craneo0 {
+	top: 7.9em;
+	left: 8.1em;
+}
+
+#Craneo1 {
+	top: 19em;
+	left: 75em;
+}
+
+#Craneo2 {
+	top: 7.2em;
+	left: 75em;
+}
+
+#Craneo3 {
+	top: 15.1em;
+	left: 75em;
+}
+
+#Craneo4 {
+	top: 16.9em;
+	left: 75em;
+}
+
+#Craneo5 {
+	top: 19.2em;
+	left: 38.2em;
+}
+
+#Craneo6 {
+	top: 16.6em;
+	left: 8.1em;
+}
+
+#Craneo7 {
+	top: 25.5em;
+	left: 8.1em;
+}
+
+#Craneo8 {
+	top: 16.9em;
+	left: 38.2em;
+}
+
+#Craneo9 {
+	top: 21em;
+	left: 8.1em;
+}
+
+#Craneo10 {
+	top: 21.7em;
+	left: 75em;
+}
+
+#Craneo11 {
+	top: 22.6em;
+	left: 38.2em;
+}
+
+#Craneo12 {
+	top: 28.2em;
+	left: 8.1em;
+}
+
+#Craneo13 {
+	top: 30em;
+	left: 34.8em;
+}
+
+#Craneo14 {
+	top: 28.2em;
+	left: 75em;
+}
+
+/*----Level 2----*/
+img[id='Columna Vertebral'] {
+	margin-left: 9em;
+}
+
+div[id='Columna Vertebral3'] {
+	top: 28em;
+	left: 19em;
+}
+
+div[id='Columna Vertebral4'] {
+	top: 34.2em;
+	left: 20.2em;
+}
+
+div[id='Columna Vertebral5'] {
+	top: 36.6em;
+	left: 34.1em;
+}
+
+div[id='Columna Vertebral6'] {
+	top: 39.8em;
+	left: 33.6em;
+}
+
+div[id='Columna Vertebral7'] {
+	top: 34.4em;
+	left: 57.3em;
+}
+
+div[id='Columna Vertebral8'] {
+	top: 23.5em;
+	left: 55.6em;
 }
 
 .clear {
 	clear: both;
 }
 
+/*----Next Level----*/
 .next-level {
 	width: 350px;
 	height: 150px;

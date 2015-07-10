@@ -1,7 +1,7 @@
 <div class="levels">
 	<% @skeletons.each_with_index do |skeleton, i| %>
-		<div id="img-levels<%= i %>">
-		
+		<div id="img-levels<%= i %>" data-order="<%= i %>">
+ 
 			<h3>
 				<%= skeleton.name %>
 			</h3>

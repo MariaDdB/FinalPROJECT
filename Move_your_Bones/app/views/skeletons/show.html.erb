@@ -1,32 +1,33 @@
-<h2><%= @skeletons.name %></h2>
-	<div id="content">
-		<div id="bonePile">
-			<% @skeletons.bones.each_with_index do |bone, i| %>
-			 	<div class="draggable" id="bone<%= i %>">
-					<%= bone.name %>
-			 	</div>
-			<% end %>
-		</div>
-		
-		
+<div class="content-body">
+	<h2><%= @skeletons.name %></h2>
+		<div id="content" class="<%=@skeletons.name %>">
+			<div id="bonePile">
+				<% @skeletons.bones.each_with_index do |bone, i| %>
+				 	<div class="draggable" id="bone<%= i %>">
+						<%= bone.name %>
+				 	</div>
+				<% end %>
+			</div>
+
 			<div class="skeletons-img">
 				<%= image_tag(@skeletons.skeleton_img, :id=> @skeletons.name) %>
 				<%= image_tag(@skeletons.skeleton_img3) %>
 				<%= image_tag(@skeletons.skeleton_img2) %>
 			</div>
-		
-		
-		<div id="match"></div>
+			
+			<div class="<%=@skeletons.name %>" id="match" data-level="<%=@skeletons.name %>"></div>
+		</div>
+
+	<div class="next-level">
+		<p class="congrats">Congratulations! You did it!</p>
+		<a href="" id="next"><button class="button-nextLevel">Next Level</button></a>
 	</div>
 
-<div class="next-level">
-	<p class="congrats">Congratulations! You did it!</p>
-	<button class="button-nextLevel">Next Level</button>
-</div>
+	<br>
 
-<br>
-
-<div class="clear">
-	<button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>	
-	<button><%= link_to 'LEVELS', game_skeletons_path(@game) %></button>
-</div>
+	<div class="clear">
+		<button><%= link_to 'Bones Description', game_skeleton_bones_path(@game, @skeletons) %></button>	
+		<button><%= link_to 'LEVELS', game_skeletons_path(@game) %></button>
+	</div>
+</div>		
+		

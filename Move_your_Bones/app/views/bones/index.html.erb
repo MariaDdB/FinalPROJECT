@@ -1,6 +1,13 @@
-<% @bones.each do |bone| %>
-	<p><%= bone.name %> |
-		<%= link_to 'Edit', edit_game_skeleton_bone_path(@game, @skeletons, bone) %></p>
-<% end %>
+<div class="content-bones">
+	<div class="content-description">
+		<% @bones.each do |bone| %>
+			<h4><%= bone.name %></h4>
+			<p><%= bone.description %></p>
+				<div>
+					<%= link_to 'Edit', edit_game_skeleton_bone_path(@game, @skeletons, bone) %>
+				</div>
+		<% end %>
+	</div>
 
-<button><%= link_to 'Back To Game', game_skeleton_path(@game, @skeletons) %></button>
+	<button><%= link_to 'Back To Game', game_skeleton_path(@game, @skeletons) %></button>
+</div>
